@@ -1,0 +1,14 @@
+<div class="content" role="main">
+        <div class="wrap-input100 rs1 validate-input" data-validate="Username is required">
+          <label for="uname"><b>Email</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" [(ngModel)]="email" required>
+        </div>
+        <div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="password" required>
+        </div>
+        <div class="container-login100-form-btn">
+          <button class="login100-form-btn" type="submit" (click)="login()">Login</button>
+        </div>
+    </div>
+

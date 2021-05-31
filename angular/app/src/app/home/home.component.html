@@ -1,0 +1,18 @@
+<div class="content" role="main">
+      <span>{{ title }} page!</span>
+
+      <div class="container">
+
+        <ul *ngFor="let product of products" >
+            <li>{{ product.title }}</li>
+            <li>Price: {{ product.price }}</li>
+            <li>Quantity: {{ product.quantity }}</li>
+        </ul>
+
+        <div class="container">
+          <button (click)="goToAboutPage()">About us</button>
+          <a [routerLink]="['/login']">Logout</a>
+        </div>
+
+      </div>
+</div>
